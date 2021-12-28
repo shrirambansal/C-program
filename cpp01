@@ -1,0 +1,27 @@
+// subtract the product and sum of the digits of an integer
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+    int prod = 1;
+    int sum = 0;
+    int n;
+    int answer;
+    cin>>n;
+
+    while (n!=0)        
+    {
+        int digit = n%10;
+        prod = prod * digit;
+        sum = sum + digit;
+        n = n/10;
+    }
+
+    answer = prod - sum;
+    cout << answer;
+    
+}
